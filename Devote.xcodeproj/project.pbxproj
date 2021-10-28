@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF356DEC272A55D500BCB234 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356DEB272A55D500BCB234 /* DevoteApp.swift */; };
+		BF356DEE272A55D500BCB234 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356DED272A55D500BCB234 /* ContentView.swift */; };
+		BF356DF0272A55D800BCB234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF356DEF272A55D800BCB234 /* Assets.xcassets */; };
+		BF356DF3272A55D800BCB234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF356DF2272A55D800BCB234 /* Preview Assets.xcassets */; };
+		BF356DF5272A55D800BCB234 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356DF4272A55D800BCB234 /* Persistence.swift */; };
+		BF356DF8272A55D800BCB234 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF356DF6272A55D800BCB234 /* Devote.xcdatamodeld */; };
+		BF356E02272A55D800BCB234 /* DevoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356E01272A55D800BCB234 /* DevoteTests.swift */; };
+		BF356E0C272A55D800BCB234 /* DevoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356E0B272A55D800BCB234 /* DevoteUITests.swift */; };
+		BF356E0E272A55D800BCB234 /* DevoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF356E0D272A55D800BCB234 /* DevoteUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF356DFE272A55D800BCB234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF356DE0272A55D500BCB234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF356DE7272A55D500BCB234;
+			remoteInfo = Devote;
+		};
+		BF356E08272A55D800BCB234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF356DE0272A55D500BCB234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF356DE7272A55D500BCB234;
+			remoteInfo = Devote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF356DE8272A55D500BCB234 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF356DEB272A55D500BCB234 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
+		BF356DED272A55D500BCB234 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF356DEF272A55D800BCB234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF356DF2272A55D800BCB234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF356DF4272A55D800BCB234 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BF356DF7272A55D800BCB234 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		BF356DFD272A55D800BCB234 /* DevoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF356E01272A55D800BCB234 /* DevoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteTests.swift; sourceTree = "<group>"; };
+		BF356E07272A55D800BCB234 /* DevoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF356E0B272A55D800BCB234 /* DevoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITests.swift; sourceTree = "<group>"; };
+		BF356E0D272A55D800BCB234 /* DevoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF356DE5272A55D500BCB234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356DFA272A55D800BCB234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356E04272A55D800BCB234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF356DDF272A55D500BCB234 = {
+			isa = PBXGroup;
+			children = (
+				BF356DEA272A55D500BCB234 /* Devote */,
+				BF356E00272A55D800BCB234 /* DevoteTests */,
+				BF356E0A272A55D800BCB234 /* DevoteUITests */,
+				BF356DE9272A55D500BCB234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF356DE9272A55D500BCB234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF356DE8272A55D500BCB234 /* Devote.app */,
+				BF356DFD272A55D800BCB234 /* DevoteTests.xctest */,
+				BF356E07272A55D800BCB234 /* DevoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF356DEA272A55D500BCB234 /* Devote */ = {
+			isa = PBXGroup;
+			children = (
+				BF356DEB272A55D500BCB234 /* DevoteApp.swift */,
+				BF356DED272A55D500BCB234 /* ContentView.swift */,
+				BF356DEF272A55D800BCB234 /* Assets.xcassets */,
+				BF356DF4272A55D800BCB234 /* Persistence.swift */,
+				BF356DF6272A55D800BCB234 /* Devote.xcdatamodeld */,
+				BF356DF1272A55D800BCB234 /* Preview Content */,
+			);
+			path = Devote;
+			sourceTree = "<group>";
+		};
+		BF356DF1272A55D800BCB234 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF356DF2272A55D800BCB234 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF356E00272A55D800BCB234 /* DevoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF356E01272A55D800BCB234 /* DevoteTests.swift */,
+			);
+			path = DevoteTests;
+			sourceTree = "<group>";
+		};
+		BF356E0A272A55D800BCB234 /* DevoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF356E0B272A55D800BCB234 /* DevoteUITests.swift */,
+				BF356E0D272A55D800BCB234 /* DevoteUITestsLaunchTests.swift */,
+			);
+			path = DevoteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF356DE7272A55D500BCB234 /* Devote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF356E11272A55D800BCB234 /* Build configuration list for PBXNativeTarget "Devote" */;
+			buildPhases = (
+				BF356DE4272A55D500BCB234 /* Sources */,
+				BF356DE5272A55D500BCB234 /* Frameworks */,
+				BF356DE6272A55D500BCB234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Devote;
+			productName = Devote;
+			productReference = BF356DE8272A55D500BCB234 /* Devote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF356DFC272A55D800BCB234 /* DevoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF356E14272A55D800BCB234 /* Build configuration list for PBXNativeTarget "DevoteTests" */;
+			buildPhases = (
+				BF356DF9272A55D800BCB234 /* Sources */,
+				BF356DFA272A55D800BCB234 /* Frameworks */,
+				BF356DFB272A55D800BCB234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF356DFF272A55D800BCB234 /* PBXTargetDependency */,
+			);
+			name = DevoteTests;
+			productName = DevoteTests;
+			productReference = BF356DFD272A55D800BCB234 /* DevoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF356E06272A55D800BCB234 /* DevoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF356E17272A55D800BCB234 /* Build configuration list for PBXNativeTarget "DevoteUITests" */;
+			buildPhases = (
+				BF356E03272A55D800BCB234 /* Sources */,
+				BF356E04272A55D800BCB234 /* Frameworks */,
+				BF356E05272A55D800BCB234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF356E09272A55D800BCB234 /* PBXTargetDependency */,
+			);
+			name = DevoteUITests;
+			productName = DevoteUITests;
+			productReference = BF356E07272A55D800BCB234 /* DevoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF356DE0272A55D500BCB234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BF356DE7272A55D500BCB234 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BF356DFC272A55D800BCB234 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = BF356DE7272A55D500BCB234;
+					};
+					BF356E06272A55D800BCB234 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = BF356DE7272A55D500BCB234;
+					};
+				};
+			};
+			buildConfigurationList = BF356DE3272A55D500BCB234 /* Build configuration list for PBXProject "Devote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF356DDF272A55D500BCB234;
+			productRefGroup = BF356DE9272A55D500BCB234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF356DE7272A55D500BCB234 /* Devote */,
+				BF356DFC272A55D800BCB234 /* DevoteTests */,
+				BF356E06272A55D800BCB234 /* DevoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF356DE6272A55D500BCB234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF356DF3272A55D800BCB234 /* Preview Assets.xcassets in Resources */,
+				BF356DF0272A55D800BCB234 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356DFB272A55D800BCB234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356E05272A55D800BCB234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF356DE4272A55D500BCB234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF356DF5272A55D800BCB234 /* Persistence.swift in Sources */,
+				BF356DEE272A55D500BCB234 /* ContentView.swift in Sources */,
+				BF356DF8272A55D800BCB234 /* Devote.xcdatamodeld in Sources */,
+				BF356DEC272A55D500BCB234 /* DevoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356DF9272A55D800BCB234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF356E02272A55D800BCB234 /* DevoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF356E03272A55D800BCB234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF356E0C272A55D800BCB234 /* DevoteUITests.swift in Sources */,
+				BF356E0E272A55D800BCB234 /* DevoteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF356DFF272A55D800BCB234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF356DE7272A55D500BCB234 /* Devote */;
+			targetProxy = BF356DFE272A55D800BCB234 /* PBXContainerItemProxy */;
+		};
+		BF356E09272A55D800BCB234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF356DE7272A55D500BCB234 /* Devote */;
+			targetProxy = BF356E08272A55D800BCB234 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF356E0F272A55D800BCB234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF356E10272A55D800BCB234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF356E12272A55D800BCB234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Devote/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.Devote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF356E13272A55D800BCB234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Devote/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.Devote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF356E15272A55D800BCB234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.DevoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Devote.app/Devote";
+			};
+			name = Debug;
+		};
+		BF356E16272A55D800BCB234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.DevoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Devote.app/Devote";
+			};
+			name = Release;
+		};
+		BF356E18272A55D800BCB234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.DevoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Devote;
+			};
+			name = Debug;
+		};
+		BF356E19272A55D800BCB234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MH6T8339A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.DevoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Devote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF356DE3272A55D500BCB234 /* Build configuration list for PBXProject "Devote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF356E0F272A55D800BCB234 /* Debug */,
+				BF356E10272A55D800BCB234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF356E11272A55D800BCB234 /* Build configuration list for PBXNativeTarget "Devote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF356E12272A55D800BCB234 /* Debug */,
+				BF356E13272A55D800BCB234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF356E14272A55D800BCB234 /* Build configuration list for PBXNativeTarget "DevoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF356E15272A55D800BCB234 /* Debug */,
+				BF356E16272A55D800BCB234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF356E17272A55D800BCB234 /* Build configuration list for PBXNativeTarget "DevoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF356E18272A55D800BCB234 /* Debug */,
+				BF356E19272A55D800BCB234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF356DF6272A55D800BCB234 /* Devote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF356DF7272A55D800BCB234 /* Devote.xcdatamodel */,
+			);
+			currentVersion = BF356DF7272A55D800BCB234 /* Devote.xcdatamodel */;
+			path = Devote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF356DE0272A55D500BCB234 /* Project object */;
+}
